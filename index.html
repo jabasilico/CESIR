@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="LogoTransparente.png">
+  
+  <title>CESIR</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 w-full bg-white shadow z-50">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+      <div class="flex items-center space-x-2">
+        <!-- Logo -->
+        <img src="logoCISER.png" alt="Logo CESIR" class="h-8 w-8 object-contain" />
+        <span class="text-xl font-bold text-green-700">CESIR - Centro Especializado en Salud Integral y Rehabilitación</span>
+      </div>
+      <div class="space-x-4 hidden md:flex">
+        <a href="#inicio" class="hover:text-green-600">Inicio</a>
+        <a href="#quienes" class="hover:text-green-600">Quiénes somos</a>
+        <a href="#instalaciones" class="hover:text-green-600">Instalaciones</a>
+        <a href="#contacto" class="hover:text-green-600">Contacto</a>
+        <a href="public/index.php" class="bg-green-600 hover:bg-green-700 text-white py-1 px-3 rounded transition">Ir a la aplicación</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Inicio -->
+  <section id="inicio" class="h-screen bg-cover bg-center flex items-center justify-center text-white" style="background-image: url('https://images.unsplash.com/photo-1588776814546-ec7e5b89d8e7');">
+    <div class="bg-black bg-opacity-50 p-10 rounded-lg text-center max-w-2xl">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Bienvenido a CESIR</h1>
+      <p class="text-lg mb-6">Un espacio para sanar, crecer y comenzar de nuevo</p>
+      <a href="#contacto" class="bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded transition">Contáctanos</a>
+    </div>
+  </section>
+
+  <!-- Quiénes somos -->
+  <section id="quienes" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-4 text-green-700">Quiénes somos</h2>
+      <p class="max-w-3xl mx-auto text-lg mb-6">
+        En CESIR brindamos un entorno seguro y profesional para la recuperación integral de nuestros pacientes.
+        Nos enfocamos en el bienestar físico, mental y emocional.
+      </p>
+      <p class="text-gray-600">Nuestro equipo está formado por médicos, psicólogos, terapistas y acompañantes con años de experiencia en procesos de rehabilitación.</p>
+    </div>
+  </section>
+
+  <!-- Instalaciones -->
+  <section id="instalaciones" class="py-20 bg-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-8 text-green-700">Nuestras instalaciones</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Habitación" class="rounded-lg shadow">
+        <img src="https://images.unsplash.com/photo-1559757175-5700dde67548" alt="Espacio común" class="rounded-lg shadow">
+        <img src="https://images.unsplash.com/photo-1579722826665-b95c0c24ed4a" alt="Parque" class="rounded-lg shadow">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8 text-green-700">Contacto</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <form id="formContacto" class="bg-white p-6 rounded shadow space-y-4">
+            <input type="text"  name="nombre"  placeholder="Nombre" required
+                  class="w-full border border-gray-300 p-2 rounded">
+            <input type="email" name="email"   placeholder="Email" required
+                  class="w-full border border-gray-300 p-2 rounded">
+            <textarea name="consulta" placeholder="Consulta" required
+                      class="w-full border border-gray-300 p-2 rounded h-32"></textarea>
+            <button type="submit" class="bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded">
+              Enviar
+            </button>
+            <div id="respContacto" class="mt-2 text-sm"></div>
+          </form>
+        <div class="space-y-4 text-gray-700">
+          <p><strong>Dirección:</strong> 72 Nro. 1768 e/30 y 31</p>
+          <p><strong>Teléfono:</strong> 221-450-6050</p>
+          <p><strong>Email:</strong> cesir.laplata@gmail.com</p>
+<!--          <p><strong>WhatsApp:</strong> <a href="https://wa.me/541112345678" class="text-green-600 hover:underline">+54 11 1234 5678</a></p> -->
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.610651741226!2d-57.9532057!3d-34.9522033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62f1234567%3A0xabcdef!2sCalle%2072%201768%2C%20La%20Plata%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1724858780000!5m2!1ses!2sar" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-700 text-white py-6 text-center">
+    <p>&copy; 2025 CESIR. Todos los derechos reservados.</p>
+  </footer>
+
+
+<script>
+document.getElementById('formContacto').addEventListener('submit', e => {
+  e.preventDefault();
+
+  const form = e.target;
+  const fd   = new FormData(form);
+  fd.append('destino', 'jabasilico@gmail.com');  // opcional
+
+  fetch('contacto.php', { method: 'POST', body: fd })
+    .then(r => r.json())
+    .then(res => {
+      document.getElementById('respContacto').textContent = res.mensaje;
+      if (res.ok) form.reset();
+    })
+    .catch(err => {
+      document.getElementById('respContacto').textContent = 'Error al enviar.';
+      console.error(err);
+    });
+});
+</script>
+
+</body>
+</html>
